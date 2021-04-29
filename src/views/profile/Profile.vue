@@ -1,10 +1,16 @@
 <template>
-  <h1>我的</h1>
+  <div id="profile">
+    <nav-bar><div slot="center">我的</div></nav-bar>
+  </div>
 </template>
 
 <script>
+  import NavBar from "../../components/common/navbar/NavBar";
   export default {
-    name: "Profile"
+    name: "Profile",
+    components:{
+      NavBar
+    }
   }
 </script>
 
